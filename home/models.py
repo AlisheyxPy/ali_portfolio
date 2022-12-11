@@ -2,7 +2,5 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser
 # Create your models here.
 
-class Mode(AbstractUser):
-    age = models.IntegerField(null=True,blank=True)
-    country = models.TextField(null=True,blank=True)
+
 

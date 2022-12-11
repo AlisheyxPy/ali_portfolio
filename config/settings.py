@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-^rzu9%vjdewhgyn)3s&^hks6r1)0i2*ze&+fmytgpc14ksclm_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['162.243.161.19']
 
 
 # Application definition
@@ -77,10 +77,15 @@ WSGI_APPLICATION = 'config.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ali_portfolio',
+        'USER': 'alijon',
+        'PASSWORD': 'alijon',
+        'HOST': '127.0.0.1',
+        'PORT': '5432',
     }
 }
+
 
 
 # Password validation
