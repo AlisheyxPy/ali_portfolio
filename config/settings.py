@@ -78,7 +78,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ali_portfolio',
+        'NAME': 'portfolio',
         'USER': 'alijon',
         'PASSWORD': 'alijon',
         'HOST': '127.0.0.1',
